@@ -3,11 +3,24 @@
   width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+  color: #fff;
 }
 
-.content{
+.content {
   width: 100%;
   display: flex;
+  align-items: start;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -22,7 +35,6 @@
 }
 
 .App-header {
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;

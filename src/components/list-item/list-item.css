@@ -18,20 +18,17 @@
   transition: all .2s;
   position: absolute;
   z-index: 1;
-  /* opacity: 0; */
   padding: 3px 10px 5px;
   border-radius: 5px;
   background-color: rgb(67, 72, 80);
   left: 20%;
-  top: 30px;
+  top: 50px;
   display: none;
 }
 .list-item:hover .item-name {
     display: block;
 }
-/* .item-name:hover{
-  display: none;
-} */
+
 .item-name::before {
   content: "";
   position: absolute;
@@ -39,4 +36,7 @@
   top: -20px;
   border: 10px solid transparent;
   border-bottom: 10px solid rgb(67, 72, 80);
+}
+.item-name__propcent{
+  color: rgb(223, 211, 53);
 }

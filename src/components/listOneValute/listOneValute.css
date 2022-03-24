@@ -1,0 +1,12 @@
+
+.list-one-valute{
+    position: sticky;
+    top: 0;
+    width: 30%;
+    height: auto;
+}
+
+.list-one-valute__item{
+    display: flex;
+    justify-content: space-between;
+}

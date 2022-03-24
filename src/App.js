@@ -17,28 +17,30 @@ class App extends Component {
   getListValute = async (code) => {
     const listOneValute = [];
     let res = await this.coursService.getAllResource();
-    const { Value, Previous } = res.Valute[code];
+    const { Value, Previous} = res.Valute[code];
+
     const newItem = {
       Date: res.Date,
       Value,
-      Previous
+      Previous,
+
     }
     listOneValute.push(newItem);
 
     for (let i = 0; i < 9; i++) {
       res = await this.coursService.getItemResorce(res.PreviousURL);
-      const { Value, Previous } = res.Valute[code];
+      const { Value, Previous} = res.Valute[code];
       const newItem = {
         Date: res.Date,
         Value,
-        Previous
+        Previous,
       }
       listOneValute.push(newItem);
     }
-
+    console.log(res.Valute[code]['Name']);
     this.setState({
       listOneValute,
-      currentCode: code
+      currentCode: res.Valute[code]['Name']
     })
 
   }
