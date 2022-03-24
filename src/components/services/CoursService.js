@@ -23,7 +23,7 @@ export default class CoursService extends Component {
 
     getItemResorce = async (url) => {
         const res = await this.getResource(url);
-        return res
+        return res;
     }
 
 

@@ -1,21 +1,23 @@
 .list-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 2fr 1fr;
+  justify-items: flex-start;
   background-color: rgb(165, 160, 160);
   padding: 5px;
   cursor: pointer;
-  transition: all .1s;
+  transition: all 0.1s;
   position: relative;
+  padding-left: 60px;
 }
 
 .list-item:nth-child(even) {
   background-color: rgb(117, 112, 112);
 }
-.list-item:hover{
-    background-color: rgb(66, 62, 62);
+.list-item:hover {
+  background-color: rgb(66, 62, 62);
 }
 .item-name {
-  transition: all .2s;
+  transition: all 0.2s;
   position: absolute;
   z-index: 1;
   padding: 3px 10px 5px;
@@ -26,7 +28,7 @@
   display: none;
 }
 .list-item:hover .item-name {
-    display: block;
+  display: block;
 }
 
 .item-name::before {
@@ -37,6 +39,6 @@
   border: 10px solid transparent;
   border-bottom: 10px solid rgb(67, 72, 80);
 }
-.item-name__propcent{
+.item-name__propcent {
   color: rgb(223, 211, 53);
 }

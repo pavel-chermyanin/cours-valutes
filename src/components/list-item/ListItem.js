@@ -18,10 +18,14 @@ export default class ListItem extends Component {
           {this.props.Name}
         </span>
         <span>{this.props.CharCode}</span>
-        <span>{this.props.Value.toFixed(2)} <span className='item-name__propcent'>₽</span></span>
-        <span style={{
-          'color': procent > 0 ? 'rgb(84, 216, 84)' : 'red'
-        }}>{procent} %</span>
+        <span className='item-value'>{this.props.Value.toFixed(2)}
+          <span className='item-name__propcent'> ₽</span>
+        </span>
+        <span
+          className='item-procent'
+          style={{
+            'color': procent > 0 ? 'rgb(84, 216, 84)' : 'red'
+          }}>{procent} %</span>
       </li>
     )
   }
